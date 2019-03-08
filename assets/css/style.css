@@ -1,0 +1,30 @@
+p {
+    text-align: center;
+}
+#startGameButton {
+    text-align: center;
+}
+#submitAnswers {
+    text-align: center;
+}
+#score {
+    text-align: center;
+}
+#timer {
+    text-align: center;
+    font-size: 32px;
+}
+.bglogo {
+    background-image: url("../images/batmanlogo.png");
+    background-size: 100% 100%;
+    color: white;
+    background-color: yellow;
+}
+body {
+    background-color: black;
+    color: white;
+}
+.btn-yellow {
+    background-color: yellow;
+    color: black;
+}

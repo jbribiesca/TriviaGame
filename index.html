@@ -1,15 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Trivia Game!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
-    
 
+<body>
+
+    <div>
+        <div class="container">
+            <div class="jumbotron bglogo" style="text-align: center">
+                <h1>Batman Trivia Game</h1>
+            </div>
+
+            <div id="startGameButton">
+                <button type="button" class="btn btn-yellow" id="startGame">Start Game!</button>
+            </div>
+
+            <div id="timer">
+                Time Remaining:
+                <span id="countdown"></span><br>
+            </div>
+
+            <div id="score">
+                Score:<br>
+                <div>Correct: <span id="correct-text"></span></div>
+                <div>Incorrect: <span id="incorrect-text"></span></div>
+                <div>Not Answered: <span id="notanswered-text"></span></div><br>
+            </div>
+
+            <div id="trivia">
+
+                <div>
+                    <p>Question 1:</p>
+                    <p>Who is black and yellow and has a 6 pack?</p>
+                    <p>
+                        <input type="radio" name="question1" value="a"> Batman
+                        <input type="radio" name="question1" value="b"> Superman
+                        <input type="radio" name="question1" value="c"> Wonder Woman
+                        <input type="radio" name="question1" value="d"> Hulk </p>
+                </div>
+
+                <div>
+                    <p>Question 2:</p>
+                    <p>Who is Batman's side kick?</p>
+                    <p>
+                        <input type="radio" name="question2" value="a"> Wonder Woman
+                        <input type="radio" name="question2" value="b"> Joker
+                        <input type="radio" name="question2" value="c"> Robin
+                        <input type="radio" name="question2" value="d"> Hulk </p>
+                </div>
+
+                <div>
+                    <p>Question 3:</p>
+                    <p>What is Batman's secret identity?</p>
+                    <p>
+                        <input type="radio" name="question3" value="a"> Ben Affleck
+                        <input type="radio" name="question3" value="b"> Matt Damon
+                        <input type="radio" name="question3" value="c"> Bruce Wayne
+                        <input type="radio" name="question3" value="d"> Bill Gates </p>
+                </div>
+
+                <div>
+                    <p>Question 4:</p>
+                    <p>WBatman operates in what fictional city?/p>
+                        <p>
+                            <input type="radio" name="question4" value="a"> Fort Worth
+                            <input type="radio" name="question4" value="b"> SMU
+                            <input type="radio" name="question4" value="c"> Gotham City
+                            <input type="radio" name="question4" value="d"> City of Angels </p>
+                </div>
+
+            </div>
+            <br>
+            <div id="submitAnswers">
+                <button type="button" class="btn btn-yellow" id="submit">Submit</button>
+            </div>
+
+
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
     <script src="assets/javascript/app.js"></script>
 </body>
+
 </html>
