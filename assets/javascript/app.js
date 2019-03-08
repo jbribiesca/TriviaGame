@@ -11,6 +11,7 @@ $(document).ready(function () {
     $("#timer").hide();
     $("#submitAnswers").hide();
     $("#score").hide();
+    $("#reloadPage").hide();
 
     function time() {
         if (timeRemaining == 0) {
@@ -78,14 +79,13 @@ $(document).ready(function () {
             notAnswered++
         }
 
-        
-
         $("#correct-text").text(" " + correct)
         $("#incorrect-text").text(" " + incorrect)
         $("#notanswered-text").text(" " + notAnswered)
 
         $("#trivia").empty();
         $("#submitAnswers").hide();
+        $("#reloadPage").show();
 
         isRunning=false;
 
@@ -96,6 +96,10 @@ $(document).ready(function () {
             updateScore();
         }else{}
 
+    })
+
+    $("#reloadGame").click(function(){
+        location.reload();
     })
 
     $("#startGame").click(function () {
