@@ -15,7 +15,7 @@ p {
     font-size: 32px;
 }
 .bglogo {
-    background-image: url("../images/batmanlogo.png");
+    background-image: url("../images/batman.jpg");
     background-size: 100% 100%;
     color: white;
     background-color: yellow;
@@ -28,3 +28,7 @@ body {
     background-color: yellow;
     color: black;
 }
+.yellow {
+    color: yellow;
+}
+

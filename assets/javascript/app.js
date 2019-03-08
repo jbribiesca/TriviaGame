@@ -39,9 +39,9 @@ $(document).ready(function () {
         }
 
         if ($('input[name=question2]:checked').val()) {
-            if ($('input[name=question2]:checked').val() === "b") {
+            if ($('input[name=question2]:checked').val() === "c") {
                 correct++;
-            } else if ($('input[name=question2]:checked').val() === "a" || "c" || "d") {
+            } else if ($('input[name=question2]:checked').val() === "a" || "b" || "d") {
                 incorrect++;
             }
         } else {
@@ -62,6 +62,16 @@ $(document).ready(function () {
             if ($('input[name=question4]:checked').val() === "c") {
                 correct++;
             } else if ($('input[name=question4]:checked').val() === "a" || "b" || "d") {
+                incorrect++;
+            }
+        } else {
+            notAnswered++
+        }
+
+        if ($('input[name=question5]:checked').val()) {
+            if ($('input[name=question5]:checked').val() === "a") {
+                correct++;
+            } else if ($('input[name=question5]:checked').val() === "c" || "b" || "d") {
                 incorrect++;
             }
         } else {
